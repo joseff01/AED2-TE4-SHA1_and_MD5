@@ -5,6 +5,7 @@
 #include <iostream>
 #include <cstring>
 #include <cstdint>
+#include "bitset"
 
 class SHA1
 {
@@ -13,8 +14,11 @@ class SHA1
 
     private:
     size_t length;
-    void divide(const unsigned char *rePhrase);
-    void pad();
+    void process(const unsigned char *rePhrase);
+    std::string divideToBinary(const unsigned char *rePhrase);
+    std::string pad(std::string list);
+    void divideInChunks(std::string list);
+    List<std::string> chunks512;
 
 };
 

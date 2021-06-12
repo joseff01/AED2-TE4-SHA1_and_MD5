@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+.idea/
+
+cmake-build-debug/CMakeFiles/3.19.2/CMakeCCompiler.cmake
+
+*.cmake
+
+*.txt
+
+cmake-build-debug/CMakeFiles/3.19.2/
+
+*.log
+
+cmake-build-debug/
