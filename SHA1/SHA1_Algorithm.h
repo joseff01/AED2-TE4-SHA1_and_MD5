@@ -18,7 +18,7 @@ class SHA1
     std::string divideToBinary(const unsigned char *rePhrase);
     std::string pad(std::string list);
     void divideInChunks(std::string list);
-    List<std::string> chunks512;
+    List<List<std::string>> chunks512;
 
 };
 

@@ -40,6 +40,7 @@ std::string SHA1::pad(std::string list)
 void SHA1::divideInChunks(std::string list)
 {
     std::string currentStr = "";
+    List<std::string> newList;
     int num = 0;
     int intgr =0;
     int i = 0;
@@ -51,11 +52,12 @@ void SHA1::divideInChunks(std::string list)
         if(num ==32)
         {
             std::cout << currentStr << std::endl;
-            chunks512.push_back(currentStr);
+            newList.push_back(currentStr);
             currentStr ="";
             num = 0;
             i++;
         }
     }
+    chunks512.push_back(newList);
 
 }
